@@ -9,18 +9,20 @@ posts = [
     {
         'author' : 'atharva',
         'title' : 'post1',
-        'content' : 'fisrt post content',
+        'content' : 'This is my first entry for the blog',
         'date_posted' : 'April 28, 2013'
     },
     {
-        'author' : 'anirban',
+        'author' : 'siva',
         'title' : 'post2',
-        'content' : 'second post content',
+        'content' : 'THis is my friend siva writing on my blog website',
         'date_posted' : 'April 29, 2013'
     }
 ]
+
 @app.route("/") ## This is our homepage route 
-@app.route("/home") ## This is also the rote pointingto the homepage 
+@app.route("/home") ## This is also the route pointing to the homepage 
+
 def home():
     return render_template('home.html', posts = posts)
 
